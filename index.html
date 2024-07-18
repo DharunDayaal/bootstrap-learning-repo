@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
   <head>
     <title>Title</title>
     <meta charset="utf-8" />
@@ -12,45 +12,96 @@
       <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
-    <div class="container">
-      <div class="row row-cols-2 g-3">
-        <div class="col-5">
-          <div class="box"></div>
-        </div>
-        <div class="col-5 ">
-          <div class="box"></div>  <!--learning the basic concepts about the grid system.-->
-        </div>                    <!--by using rows columns and container.-->
-        <div class="col-5">
-          <div class="box"></div>
-        </div>
-        <div class="col-5 ">
-          <div class="box"></div>
-        </div>
-      </div>
-
-      <table class="table">
-        <thead>
-          <tr>
-            <th>First</th>
-            <th>Last</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Dharun</td>
-            <td>Dayaal</td>
-            <td>19</td>
-          </tr>
-          <tr>
-            <td>Paul</td>
-            <td>Simon</td>
-            <td>34</td>
-          </tr>
-        </tbody>
-      </table>
+    
+        <nav>
+          <ul class="sidebar">
+            <li onclick="closeMenuBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="28px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Dharun</a></li>
+            <li class="hide"><a href="#">Home</a></li>
+            <li class="hide"><a href="#">Product</a></li>
+            <li class="hide"><a href="#">Login</a></li>
+            <li class="hide"><a href="#">Contact</a></li>
+            <li onclick="menuclick()" class="hideMenuButton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          </ul>
+        </nav>
       
-    </div>
+      
+
+      <!-- <div class="row row-cols-2 g-3">
+        <div class="col-5">
+          <div class="box"></div>
+        </div>
+        <div class="col-5 ">
+          <div class="box"></div>  // learning the basic concepts about the grid system.
+        </div>                     // by using rows columns and container.
+        <div class="col-5">
+          <div class="box"></div>
+        </div>
+        <div class="col-5 ">
+          <div class="box"></div>
+        </div>
+      </div> -->
+        <!-- <div class="table-responsive">
+          <table class="table table-bordered border-4 text-center border-primary-subtle table-hover">
+            <thead class="table-group-divider">
+              <tr class="table-dark">
+                <th>First</th>
+                <th>Last</th>
+                <th>Age</th>
+              </tr>
+            </thead>       // the built-in class table-responsive helps to make the table responsive on small screens so 
+            <tbody>        // that it makes the table to be more responsive on different screens.
+              <tr>         
+                <td>Dharun</td>
+                <td>Dayaal</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>Paul</td>
+                <td>Simon</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>dharunaa</td>
+                <td>murugesan</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> -->
+      
+        <!-- <form>
+          <div class="form-switch">
+            <input type="checkbox" class=" form-check-input" id="name" />
+            <label class="form-check-label">Name</label>                      // Bootstrap has diiferent form classes which helps to make the webpage more responsive.
+          </div>
+          <button type="submit" class="btn btn-outline-danger mt-2">Submit</button>
+        </form> -->
+      
+        <!-- <form>
+          <label for="name">Name</label>
+          <div class="input-group border-5">
+            <div class="input-group-text rounded-5">Rupees</div>
+            <input type="number" class="form-control rounded-5">    // The input-group class allows us to combine the input with the input-group-text
+            <div class="input-group- text rounded-5">.00</div>      // which tells what they need to give as input. here i taken th rupee format which tells the user to enter the money.
+          </div>
+          <button type="submit" class="btn btn-outline-danger mt-2">Submit</button>
+        </form> -->
+        
+        <!-- <form>
+          <div class="form-floating">
+            <input type="email" id class="form-control" placeholder="Enter the email">
+            <label class="form-label">Enter the name</label>
+          </div>
+        </form> -->
+
+  
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="assets/script.js"></script>
